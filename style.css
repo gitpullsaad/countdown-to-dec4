@@ -19,6 +19,7 @@
     --accent-warm:  #b89b6a;
     --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
     --font-serif:   'Playfair Display', Georgia, serif;
+    --font-urdu:    'Noto Nastaliq Urdu', serif;
     --space-xs:  0.5rem;
     --space-sm:  1rem;
     --space-md:  1.5rem;
@@ -67,7 +68,9 @@ body {
     animation: fadeInUp 1s ease-out both;
 }
 
-.header { text-align: center; }
+.header {
+    text-align: center;
+}
 
 .header-label {
     font-size: 0.8rem;
@@ -77,6 +80,16 @@ body {
     color: var(--text-muted);
     margin-bottom: var(--space-xs);
     animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.header-urdu {
+    font-family: var(--font-urdu);
+    font-size: clamp(1.4rem, 4.2vw, 2.1rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 2.2;
+    margin: 0.15rem 0 0.35rem 0;
+    animation: fadeInUp 0.8s ease-out 0.28s both;
 }
 
 .header-date {
@@ -210,6 +223,7 @@ body {
     .countdown-unit { min-width: 4rem; padding: var(--space-sm) var(--space-xs); border-radius: 12px; }
     .countdown-separator { padding-bottom: 0.8rem; }
     .container { gap: var(--space-lg); }
+    .header-urdu { line-height: 2; margin: 0.1rem 0; }
 }
 
 @media (max-width: 380px) {
