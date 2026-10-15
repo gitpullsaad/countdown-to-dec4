@@ -1,8 +1,8 @@
 ﻿(() => {
     'use strict';
 
-    const TARGET = new Date(2026, 11, 4, 0, 0, 0);
-    const PROGRESS_START = new Date(2026, 9, 16, 0, 0, 0);
+    const TARGET = new Date(2026, 11, 4, 0, 0, 0); // Dec 4, 2026
+    const PROGRESS_START = new Date(2026, 9, 4, 0, 0, 0); // Oct 4, 2026
 
     const els = {
         days:    document.getElementById('days'),
@@ -39,7 +39,7 @@
             els.minutes.textContent = '00';
             els.seconds.textContent = '00';
             els.fill.style.width    = '100%';
-            els.pText.textContent   = 'The day has arrived!';
+            els.pText.textContent   = '100% of the total wait elapsed - The day has arrived!';
             document.querySelector('.header-label').textContent = 'today is';
             return;
         }
