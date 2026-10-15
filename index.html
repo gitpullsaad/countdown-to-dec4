@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown to December 4, 2026</title>
+    <meta name="description" content="A minimalistic countdown timer to December 4, 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+
+    <main class="container">
+        <header class="header">
+            <p class="header-label">counting down to</p>
+            <h1 class="header-date">December 4<span class="header-year">, 2026</span></h1>
+        </header>
+
+        <section class="countdown" id="countdown" aria-label="Countdown timer">
+            <div class="countdown-unit" id="unit-days">
+                <span class="countdown-value" id="days">00</span>
+                <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-separator" aria-hidden="true">:</div>
+            <div class="countdown-unit" id="unit-hours">
+                <span class="countdown-value" id="hours">00</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-separator" aria-hidden="true">:</div>
+            <div class="countdown-unit" id="unit-minutes">
+                <span class="countdown-value" id="minutes">00</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-separator" aria-hidden="true">:</div>
+            <div class="countdown-unit" id="unit-seconds">
+                <span class="countdown-value" id="seconds">00</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </section>
+
+        <div class="progress-container" aria-label="Progress towards target date">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p class="progress-text" id="progress-text"></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
