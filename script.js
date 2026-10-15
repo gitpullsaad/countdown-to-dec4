@@ -2,7 +2,7 @@
     'use strict';
 
     const TARGET = new Date(2026, 11, 4, 0, 0, 0);
-    const PROGRESS_START = new Date(2026, 0, 1, 0, 0, 0);
+    const PROGRESS_START = new Date(2026, 9, 16, 0, 0, 0);
 
     const els = {
         days:    document.getElementById('days'),
@@ -59,7 +59,7 @@
         const elapsed = now - PROGRESS_START;
         const pct     = Math.min(Math.max((elapsed / total) * 100, 0), 100);
         els.fill.style.width = pct.toFixed(2) + '%';
-        els.pText.textContent = pct.toFixed(1) + '% of the year elapsed';
+        els.pText.textContent = pct.toFixed(1) + '% of the total wait elapsed';
 
         requestAnimationFrame(update);
     }
